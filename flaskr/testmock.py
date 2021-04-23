@@ -12,7 +12,7 @@ from .auth import login_post,signup_post
 
 class Testmock(unittest.TestCase):
 
-# Testing add complaint function by using mocking method
+# Testing auth function by using mocking method
  @mock.patch('auth.login_post')
  def test_login_post(self, test_mock):
         test_mock = login_post
